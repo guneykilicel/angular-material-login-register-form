@@ -15,11 +15,23 @@
         <mat-form-field>
           <mat-label>Email</mat-label>
           <input matInput placeholder="Emailinizi giriniz" formControlName="email">
+          <mat-error *ngIf="loginForm.get('email')?.hasError('required')">
+            Email zorunludur.
+          </mat-error>
+          <mat-error *ngIf="loginForm.get('email')?.hasError('email')">
+            Lütfen doğru formatta email giriniz.
+          </mat-error>
         </mat-form-field>
       
         <mat-form-field>
           <mat-label>Şifre</mat-label>
           <input type="password" matInput placeholder="Şifrenizi giriniz" formControlName="password">
+          <mat-error *ngIf="loginForm.get('password')?.hasError('required')">
+            Şifre zorunludur.
+          </mat-error>
+          <mat-error *ngIf="loginForm.get('password')?.hasError('minlength')">
+            Lütfen minimum 8 karakter giriniz.
+          </mat-error>
         </mat-form-field>
         
         <button [disabled]="loginForm.invalid" mat-raised-button color="primary">Giriş Yap</button>
