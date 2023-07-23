@@ -11,3 +11,6 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
 ![](https://github.com/guneykilicel/angular-material-login-register-form/blob/main/src/assets/gitI/LR1.png)
+![](https://github.com/guneykilicel/angular-material-login-register-form/blob/main/src/assets/gitI/LR2.png)
+![](https://github.com/guneykilicel/angular-material-login-register-form/blob/main/src/assets/gitI/LR3.png)
+![](https://github.com/guneykilicel/angular-material-login-register-form/blob/main/src/assets/gitI/LR4.png)
